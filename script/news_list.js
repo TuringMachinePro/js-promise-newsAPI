@@ -15,7 +15,7 @@ fetch(url)
     .then((result) => {
         news.innerHTML = render(result)
     }).catch((err) => {
-        news.innerHTML = showMessage('Exceed Limit')
+        news.innerHTML = showMessage(new Error ('Exceed Limit'))
     }).finally(() => {
         
     })
