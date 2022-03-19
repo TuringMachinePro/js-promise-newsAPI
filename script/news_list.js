@@ -4,9 +4,8 @@ const news = document.getElementById('newsList');
 
 // 5c2da508fbe54c198f44c17bbf9db127
 
-function showMessage(msg) {
-    return `<h1>${msg}</h1>`;
-}
+showMessage = (msg) => `<h1>${msg}</h1>`;
+
 news.innerHTML = showMessage('Loading...');
 
 const url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=cd4f5553bb0b481e8fb1c779b9e4540a';
