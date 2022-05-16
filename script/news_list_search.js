@@ -35,7 +35,7 @@ find.addEventListener('input', function () {
             })
     }
 
-    function render(data) {
+    let render = (data) => {
         let newsAPI = '';
         data.articles.forEach((d) => {
 
@@ -47,7 +47,6 @@ find.addEventListener('input', function () {
             let year = new Date(timeStamp).getFullYear();
             // Get Date
 
-            
                 newsAPI += `
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="card mt-2 p-2" style="width: 18rem;" id="cardEffect">
